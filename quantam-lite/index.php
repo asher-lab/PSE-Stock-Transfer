@@ -238,7 +238,7 @@
                            </div>
                         </div>
                         <div class="text-center">
-                           <button type="button"  onclick="location.href='http://www.example.com'"  target = "_blank" class="btn btn-warning waves-effect waves-light text-uppercase m-r-30">
+                           <button type="button"  onclick="location.href='http://colfinancial.com'"  target = "_blank" class="btn btn-warning waves-effect waves-light text-uppercase m-r-30">
                                     Transfer Stocks
                                 </button>
                            <button type="button"  onclick="location.href='http://edge.pse.com.ph'" target = "_blank" class="btn btn-primary waves-effect waves-light text-uppercase">
