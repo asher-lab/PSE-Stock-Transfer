@@ -59,21 +59,16 @@ insert into transactiontype_tb ( transactionID, Transfertype, transferdesc, tran
 insert into transactiontype_tb ( transactionID, Transfertype, transferdesc, transfee, transperiod) values (12, 'Stock Transfer Out', 'Transfer IN/OUT', 75, '2 days');
 insert into transactiontype_tb ( transactionID, Transfertype, transferdesc, transfee, transperiod) values (13, 'Stock Transfer In', 'Transfer IN/OUT', 75, '2 days');
 
-
-
-
-
-
-insert into transaction_tb ( transactionID, Col_ID, sysdate, Stock_Code, Brokerid, TransferType) values (1, 20190000, NOW(), 'AR','ABACUS','Stock Transfer Out');
-insert into transaction_tb ( transactionID, Col_ID, sysdate, Stock_Code, Brokerid, TransferType) values (2, 20190001, NOW() , 'AR','ABACUS','Stock Transfer Out');
-insert into transaction_tb ( transactionID, Col_ID, sysdate, Stock_Code, Brokerid, TransferType) values (3, 20190002, NOW(), 'AB','BDO','Stock Transfer Out');
-insert into transaction_tb ( transactionID, Col_ID, sysdate, Stock_Code, Brokerid, TransferType) values (4, 20190003, NOW(), 'AB','FIRSTMETRO','Stock Transfer In');
-insert into transaction_tb ( transactionID, Col_ID, sysdate, Stock_Code, Brokerid, TransferType) values (5, 20190004, NOW(), 'JFC','ABACUS','Stock Transfer In');
-insert into transaction_tb ( transactionID, Col_ID, sysdate, Stock_Code, Brokerid, TransferType) values (6, 20190005, NOW(), 'PHA','FIRSTMETRO','Stock Transfer Out');
-insert into transaction_tb ( transactionID, Col_ID, sysdate, Stock_Code, Brokerid, TransferType) values (7, 20190006, NOW(), 'PHA','BDO','Stock Transfer In');
-insert into transaction_tb ( transactionID, Col_ID, sysdate, Stock_Code, Brokerid, TransferType) values (8, 20190007, NOW(), 'VUL','BARCELON','Stock Transfer Out');
-insert into transaction_tb ( transactionID, Col_ID, sysdate, Stock_Code, Brokerid, TransferType) values (9,  20190008, NOW(), 'AR','BARCELON','Stock Transfer In');
-insert into transaction_tb ( transactionID, Col_ID, sysdate, Stock_Code, Brokerid, TransferType) values (10, 20190009, NOW(), 'VUL','MANDARIN','Stock Transfer Out');
-insert into transaction_tb ( transactionID, Col_ID, sysdate, Stock_Code, Brokerid, TransferType) values (11, 20190010, NOW(), 'GMA7','MANDARIN','Stock Transfer In');
-insert into transaction_tb ( transactionID, Col_ID, sysdate, Stock_Code, Brokerid, TransferType) values (12, 20190011, NOW(), 'ABS','MANDARIN', 'Stock Transfer Out');
-insert into transaction_tb ( transactionID, Col_ID, sysdate, Stock_Code, Brokerid, TransferType) values (13, 20190012, NOW(), 'GLO','WEALTH','Stock Transfer In');
+insert into transaction_tb ( transactionID, Col_ID, sysdate, Stock_Code, Brokerid, TransferType) values (1, 20190000, '20120618', 'AR','ABACUS','Stock Transfer Out');
+insert into transaction_tb ( transactionID, Col_ID, sysdate, Stock_Code, Brokerid, TransferType) values (2, 20190001, '20130618' , 'AR','ABACUS','Stock Transfer Out');
+insert into transaction_tb ( transactionID, Col_ID, sysdate, Stock_Code, Brokerid, TransferType) values (3, 20190002, '20130618', 'AB','BDO','Stock Transfer Out');
+insert into transaction_tb ( transactionID, Col_ID, sysdate, Stock_Code, Brokerid, TransferType) values (4, 20190003, '20210618', 'AB','FIRSTMETRO','Stock Transfer In');
+insert into transaction_tb ( transactionID, Col_ID, sysdate, Stock_Code, Brokerid, TransferType) values (5, 20190004, '20200618', 'JFC','ABACUS','Stock Transfer In');
+insert into transaction_tb ( transactionID, Col_ID, sysdate, Stock_Code, Brokerid, TransferType) values (6, 20190005, '20190618', 'PHA','FIRSTMETRO','Stock Transfer Out');
+insert into transaction_tb ( transactionID, Col_ID, sysdate, Stock_Code, Brokerid, TransferType) values (7, 20190006, '20190618', 'PHA','BDO','Stock Transfer In');
+insert into transaction_tb ( transactionID, Col_ID, sysdate, Stock_Code, Brokerid, TransferType) values (8, 20190007, '20150618', 'VUL','BARCELON','Stock Transfer Out');
+insert into transaction_tb ( transactionID, Col_ID, sysdate, Stock_Code, Brokerid, TransferType) values (9,  20190008, '202120618', 'AR','BARCELON','Stock Transfer In');
+insert into transaction_tb ( transactionID, Col_ID, sysdate, Stock_Code, Brokerid, TransferType) values (10, 20190009, '20140618', 'VUL','MANDARIN','Stock Transfer Out');
+insert into transaction_tb ( transactionID, Col_ID, sysdate, Stock_Code, Brokerid, TransferType) values (11, 20190010, '20170618', 'GMA7','MANDARIN','Stock Transfer In');
+insert into transaction_tb ( transactionID, Col_ID, sysdate, Stock_Code, Brokerid, TransferType) values (12, 20190011, '20200618', 'ABS','MANDARIN', 'Stock Transfer Out');
+insert into transaction_tb ( transactionID, Col_ID, sysdate, Stock_Code, Brokerid, TransferType) values (13, 20190012, '20200518', 'GLO','WEALTH','Stock Transfer In');
