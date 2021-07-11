@@ -424,7 +424,7 @@ if(isset($_POST['txsub']))
                                         <span class="form-bar"></span>
                                         <label class="float-label">Stock Name</label></div>
                                     <div class="form-group form-success">
-                                        <input type="text" name="Stock_Amount" class="form-control" placeholder="500" required >
+                                        <input type="text" name="Stock_Amount" class="form-control" placeholder="500" required minlength="1" maxlength="18">
                                         <span class="form-bar"></span>
                                         <label class="float-label">Amount of shares to transfer</label></div>
                                     <div class="form-group form-danger">
@@ -502,7 +502,7 @@ if(isset($_POST['txsub']))
                                                 <span class="form-bar"></span>
                                                 <label class="float-label">Counter Party Broker Name</label></div>
                                             <div class="form-group form-default form-static-label">
-                                                <input type="text" name="Broker_contact" class="form-control" placeholder="Enter Broker Contact Number" minlength="3" maxlength="19" required >
+                                                <input type="text" name="Broker_contact" class="form-control" placeholder="Enter Broker Contact Number" minlength="3" maxlength="18" required >
                                                 <span class="form-bar"></span>
                                                 <label class="float-label">Contact Number</label></div>
                                             <div class="form-group form-default form-static-label">
