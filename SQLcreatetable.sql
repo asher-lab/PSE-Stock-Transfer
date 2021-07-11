@@ -1,4 +1,3 @@
-
 CREATE TABLE custinfo_tb(
 	transactionID bigint NOT NULL,
     Col_ID int(8) NOT NULL,
@@ -6,7 +5,7 @@ CREATE TABLE custinfo_tb(
 	contact int(11) NOT NULL,
 	address varchar(100) NOT NULL,
 	tdcp varchar(100) NOT NULL,
-	pc varchar(4) NOT NULL,
+	pc int(4) NOT NULL,
     PRIMARY KEY (Col_ID,transactionID)
     
   
@@ -28,8 +27,8 @@ CREATE TABLE stockinfo_tb
 	transactionID bigint NOT NULL,
 	Stock_Code varchar(6) NOT NULL,
 	Stock_Name varchar(50) NOT NULL,
-	Stock_Amount int(9) NOT NULL,
-	Avecost float NOT NULL,
+	Stock_Amount int(9) NOT NULL, 
+	Avecost float(6) NOT NULL,
 	Cert_amount float NOT NULL,
 	PRIMARY KEY (stock_code,transactionID)
 	
@@ -49,9 +48,9 @@ CREATE TABLE transactiontype_tb
 
 
 CREATE TABLE transaction_tb(
-    transactionID bigint  NOT NULL AUTO_INCREMENT,
+    transactionID bigint  NOT NULL,
     COL_ID int NOT NULL,
-    sysdate DATETIME,
+    sysdate DATE,
     Stock_Code varchar(6) NOT NULL,
 	Brokerid varchar(30) NOT NULL,
 	Transfertype varchar(20) NOT NULL,
