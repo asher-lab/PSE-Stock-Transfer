@@ -9,6 +9,6 @@ Paste this in im database sql tab: https://github.com/asher-lab/PSE-Stock-Transf
 
 download : https://codeload.github.com/asher-lab/PSE-Stock-Transfer/zip/refs/heads/master <br>
 extract contents to: C://xampp/htdocs/ then paste here<br>
-go to: http://localhost/quantum-lite/index.php<br><br>
+go to: http://localhost/quantum-lite/index.php or http://localhost/PSE-Stock-Transfer/quantum-lite/index.php <br><br>
 
 ![MyDrive Design](Screenshots/Screenshot%20(303).png)
