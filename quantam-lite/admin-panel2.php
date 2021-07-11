@@ -90,7 +90,7 @@ if(isset($_POST['txsub']))
    
     $transfee = 75.00;
     $transferdesc = "Transfer IN/OUT ";
-    $transperiod = "2 working days"; }
+    $transperiod = "2 days"; }
 
 
 

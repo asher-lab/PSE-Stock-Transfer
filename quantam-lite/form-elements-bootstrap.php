@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-   <title>Quantum Able Bootstrap 4 Admin Dashboard Template</title>
+   <title>Col Financial Stock Transfer System</title>
    <!-- HTML5 Shim and Respond.js IE9 support of HTML5 elements and media queries -->
    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
    <!--[if lt IE 9]>
@@ -166,75 +166,15 @@ if(isset($_POST['txsub']))
             <!-- Sidebar toggle button-->
             <a href="#!" data-toggle="offcanvas" class="sidebar-toggle"></a>
             <ul class="top-nav lft-nav">
-               <li>
-                  <a href="#!" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle drop icon-circle drop-image">
-                     <i class="ti-files"> </i><span> Files</span>
-                  </a>
-               </li>
-               <li class="dropdown">
-                  <a href="#!" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle drop icon-circle drop-image">
-                     <span>Dropdown </span><i class=" icofont icofont-simple-down"></i>
-                  </a>
-                  <ul class="dropdown-menu settings-menu">
-                     <li><a href="#">List item 1</a></li>
-                     <li><a href="#">List item 2</a></li>
-                     <li><a href="#">List item 3</a></li>
-                     <li><a href="#">List item 4</a></li>
-                     <li><a href="#">List item 5</a></li>
-                  </ul>
-               </li>
-               <li class="dropdown pc-rheader-submenu message-notification search-toggle">
-                  <a href="#!" id="morphsearch-search" class="drop icon-circle txt-white">
-                     <i class="ti-search"></i>
-                  </a>
-               </li>
+              
             </ul>
             <!-- Navbar Right Menu-->
             <div class="navbar-custom-menu">
                <ul class="top-nav">
                   <!--Notification Menu-->
-                  <li class="dropdown notification-menu">
-                     <a href="#!" data-toggle="dropdown" aria-expanded="false" class="dropdown-toggle">
-                        <i class="icon-bell"></i>
-                        <span class="badge badge-danger header-badge">9</span>
-                     </a>
-                     <ul class="dropdown-menu">
-                        <li class="not-head">You have <b class="text-primary">4</b> new notifications.</li>
-                        <li class="bell-notification">
-                           <a href="javascript:;" class="media">
-                              <span class="media-left media-icon">
-                    <img class="img-circle" src="assets/images/avatar-1.png" alt="User Image">
-                  </span>
-                              <div class="media-body"><span class="block">Lisa sent you a mail</span><span class="text-muted block-time">2min ago</span></div>
-                           </a>
-                        </li>
-                        <li class="bell-notification">
-                           <a href="javascript:;" class="media">
-                              <span class="media-left media-icon">
-                    <img class="img-circle" src="assets/images/avatar-2.png" alt="User Image">
-                  </span>
-                              <div class="media-body"><span class="block">Server Not Working</span><span class="text-muted block-time">20min ago</span></div>
-                           </a>
-                        </li>
-                        <li class="bell-notification">
-                           <a href="javascript:;" class="media"><span class="media-left media-icon">
-                    <img class="img-circle" src="assets/images/avatar-3.png" alt="User Image">
-                  </span>
-                                    <div class="media-body"><span class="block">Transaction xyz complete</span><span class="text-muted block-time">3 hours ago</span></div></a>
-                        </li>
-                        <li class="not-footer">
-                           <a href="#!">See all notifications.</a>
-                        </li>
-                     </ul>
-                  </li>
+                  
                   <!-- chat dropdown -->
-                  <li class="pc-rheader-submenu ">
-                     <a href="#!" class="drop icon-circle displayChatbox">
-                        <i class="icon-bubbles"></i>
-                        <span class="badge badge-danger header-badge">5</span>
-                     </a>
-
-                  </li>
+                  
                   <!-- window screen -->
                   <li class="pc-rheader-submenu">
                      <a href="#!" class="drop icon-circle" onclick="javascript:toggleFullScreen()">
@@ -246,7 +186,7 @@ if(isset($_POST['txsub']))
                   <li class="dropdown">
                      <a href="#!" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle drop icon-circle drop-image">
                         <span><img class="img-circle " src="assets/images/avatar-1.png" style="width:40px;" alt="User Image"></span>
-                        <span>John <b>Doe</b> <i class=" icofont icofont-simple-down"></i></span>
+                        <span>Admin <b>1</b> <i class=" icofont icofont-simple-down"></i></span>
 
                      </a>
                      <ul class="dropdown-menu settings-menu">
