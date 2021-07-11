@@ -3,14 +3,17 @@ PSE Stock Transfer System - COL Financial Inc. <br><br>
 run Xampp <br><br>
 http://localhost/phpmyadmin<br>
 Create database: 'incrementer'<br>
-Paste this in SQL Tab: ```CREATE TABLE incrementer(
+Paste this in SQL Tab: 
+```
+CREATE TABLE incrementer(
     transactionID bigint  NOT NULL AUTO_INCREMENT,
 	status varchar(1),
     PRIMARY KEY (transactionID)
 )ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 INSERT INTO incrementer (transactionID)
-VALUES (13);``` <br>
+VALUES (13);
+```
 
 
 <br><br>
