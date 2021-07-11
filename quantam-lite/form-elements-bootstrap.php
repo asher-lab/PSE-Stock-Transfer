@@ -406,6 +406,7 @@ if(isset($_POST['txsub']))
 
 <!-- Main-body start -->
 <form method="post" action="admin-panel2.php">
+<form> <!-- for required field -->
 <!--Stock Information -->
 <div class="col-md-6">
     <div class="card">
@@ -415,23 +416,23 @@ if(isset($_POST['txsub']))
                             <div class="card-block">
                                 <div class="row">
                                     <div class="form-group form-default">
-                                        <input type="text" name="Stock_Code" class="form-control" placeholder="JFC">
+                                        <input type="text" name="Stock_Code" class="form-control" placeholder="JFC" required>
                                         <span class="form-bar"></span>
                                         <label class="float-label">Stock Code</label></div>
                                     <div class="form-group form-primary">
-                                        <input type="text" name="Stock_Name" class="form-control" placeholder="Jollibee Food Corporation">
+                                        <input type="text" name="Stock_Name" class="form-control" placeholder="Jollibee Food Corporation" required >
                                         <span class="form-bar"></span>
                                         <label class="float-label">Stock Name</label></div>
                                     <div class="form-group form-success">
-                                        <input type="text" name="Stock_Amount" class="form-control" placeholder="500">
+                                        <input type="text" name="Stock_Amount" class="form-control" placeholder="500" required >
                                         <span class="form-bar"></span>
                                         <label class="float-label">Amount of shares to transfer</label></div>
                                     <div class="form-group form-danger">
-                                        <input type="text" name="Avecost" class="form-control" placeholder="200.00">
+                                        <input type="text" name="Avecost" class="form-control" placeholder="200.00" required >
                                         <span class="form-bar"></span>
                                         <label class="float-label">Average cost</label></div>
                                     <div class="form-group form-warning">
-                                        <input type="text" name="Cert_amount" class="form-control" placeholder="0">
+                                        <input type="text" name="Cert_amount" class="form-control" placeholder="0" required>
                                         <span class="form-bar"></span>
                                         <label class="float-label">Certificate Amount</label></div> 
                                         
@@ -453,28 +454,28 @@ if(isset($_POST['txsub']))
                         <div class="card-block">
                             <div class="row">
                                 <div class="form-group form-default">
-                                    <input type="text" name="Col_ID" class="form-control" placeholder="Ex: 201906211">
+                                    <input type="text" name="Col_ID" class="form-control" placeholder="Ex: 20190621" minlength="8" maxlength="8" required>
                                     <span class="form-bar"></span>
                                     <label class="float-label">COL Financial ID</label></div>
                                 <div class="form-group form-default">
-                                    <input type="text" name="email" class="form-control" placeholder="youremail@gmail.com">
+                                    <input type="email" name="email" class="form-control" placeholder="youremail@gmail.com" required>
                                     <span class="form-bar"></span>
                                     <label class="float-label">Email</label></div>
                                 <div class="form-group form-default">
-                                    <input type="text" name="contact" class="form-control" placeholder="09123456789"> 
+                                    <input type="text" name="contact" class="form-control" placeholder="09123456789" minlength="11" maxlength="11" required> 
                                     <span class="form-bar"></span>
                                     <label class="float-label">Contact Number #</label></div>
                                 <div class="form-group form-default">
-                                    <input type="text" name="address" class="form-control" placeholder="Blk 4">
+                                    <input type="text" name="address" class="form-control" placeholder="Blk 4" required>
                                     <span class="form-bar"></span>
                                     <label class="float-label">Delivery Address</label>
                                 </div>
                                 <div class="form-group form-default">
-                                    <input type="text" name="tdcp" class="form-control" placeholder="Sta. Mesa, Metro Manila">
+                                    <input type="text" name="tdcp" class="form-control" placeholder="Sta. Mesa, Metro Manila" required>
                                     <span class="form-bar"></span>
                                     <label class="float-label">Town/District/City/Province</label> </div>
                                 <div class="form-group form-default">
-                                    <input type="text" name="pc" class="form-control" maxlength="6" placeholder="1016">
+                                    <input type="text" name="pc" class="form-control" placeholder="1016" minlength="4" maxlength="4"  required >
                                     <span class="form-bar"></span>
                                     <label class="float-label">Postal Code / Country</label></div>
                            
@@ -497,15 +498,15 @@ if(isset($_POST['txsub']))
                         <div class="card-block">
                                 <div class="row">
                                             <div class="form-group form-default form-static-label">
-                                                <input type="text" name="Brokerid" class="form-control" placeholder="Enter Broker Name">
+                                                <input type="text" name="Brokerid" class="form-control" placeholder="Enter Broker Name" required>
                                                 <span class="form-bar"></span>
                                                 <label class="float-label">Counter Party Broker Name</label></div>
                                             <div class="form-group form-default form-static-label">
-                                                <input type="text" name="Broker_contact" class="form-control" placeholder="Enter Broker Contact Number">
+                                                <input type="text" name="Broker_contact" class="form-control" placeholder="Enter Broker Contact Number" minlength="3" maxlength="19" required >
                                                 <span class="form-bar"></span>
                                                 <label class="float-label">Contact Number</label></div>
                                             <div class="form-group form-default form-static-label">
-                                                <input type="text" name="Account_wBroker" class="form-control" placeholder="Your Account Name with Counterparty Broker">
+                                                <input type="text" name="Account_wBroker" class="form-control" placeholder="Your Account Name with Counterparty Broker" required> 
                                                 <span class="form-bar"></span>
                                                 <label class="float-label">Account Name with Counterparty Broker</label></div>
                                    
@@ -526,7 +527,7 @@ if(isset($_POST['txsub']))
 
 
 
-
+<!--transfer type -->
 
 <div class="col-md-5">
     <div class="card">
@@ -536,7 +537,7 @@ if(isset($_POST['txsub']))
                             <div class="card-block">
                                 <div class="row">
                                     <div class="form-group form-default form-static-label">
-                                        <input type="text" name="Transfertype" class="form-control">
+                                        <input type="text" name="Transfertype" class="form-control" minlength="17" maxlength="18" required required>
                                         <span class="form-bar"></span>
                                         <label class="float-label">Type of Transfer</label></div>
 
@@ -551,7 +552,8 @@ if(isset($_POST['txsub']))
 </div><!--<div class="col-md-6">-->
 
 
-<input type="submit" name="txsub" value="Submit" class="btn btn-xlg btn-primary waves-effect waves-light" onclick="return confirm('Are you sure you want to submit?')">
+<input type="submit" name="txsub" value="Submit" class="btn btn-xlg btn-primary waves-effect waves-light" onclick="return confirm('Are you sure you wsant to submit?')">
+</form>
 </form><!-- <form method = "post" action = "admin-panel2.php">-->
 
 
