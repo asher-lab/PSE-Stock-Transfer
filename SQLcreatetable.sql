@@ -1,5 +1,5 @@
 CREATE TABLE custinfo_tb(
-	transactionID bigint NOT NULL,
+	transactionID bigint(18) NOT NULL,
     Col_ID int(8) NOT NULL,
     email varchar(50) NOT NULL,
 	contact bigint NOT NULL,
