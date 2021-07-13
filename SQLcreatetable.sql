@@ -1,4 +1,3 @@
-
 CREATE TABLE custinfo_tb(
 	transactionID bigint NOT NULL,
     Col_ID int(8) NOT NULL,
@@ -15,7 +14,7 @@ CREATE TABLE custinfo_tb(
 
 CREATE TABLE brokerinfo_tb
 (
- transactionID bigint NOT NULL,
+ transactionID bigint(18) NOT NULL,
   Brokerid varchar(30) NOT NULL,
   Broker_contact bigint NOT NULL,
   Account_wBroker varchar(100) NOT NULL,
@@ -25,12 +24,12 @@ CREATE TABLE brokerinfo_tb
 
 CREATE TABLE stockinfo_tb
 (
-	transactionID bigint NOT NULL,
+	transactionID bigint(18) NOT NULL,
 	Stock_Code varchar(6) NOT NULL,
 	Stock_Name varchar(50) NOT NULL,
 	Stock_Amount int(9) NOT NULL, 
 	Avecost float(6) NOT NULL,
-	Cert_amount float NOT NULL,
+	Cert_amount int(8) NOT NULL,
 	PRIMARY KEY (stock_code,transactionID)
 	
 )ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -38,7 +37,7 @@ CREATE TABLE stockinfo_tb
 
 CREATE TABLE transactiontype_tb
 (
-  transactionID bigint NOT NULL,
+  transactionID bigint(18) NOT NULL,
   Transfertype varchar(20) NOT NULL,
   transferdesc varchar(20) NOT NULL,
   transperiod varchar(10) NOT NULL,
@@ -49,7 +48,7 @@ CREATE TABLE transactiontype_tb
 
 
 CREATE TABLE transaction_tb(
-    transactionID bigint  NOT NULL,
+    transactionID bigint(18)  NOT NULL,
     COL_ID int NOT NULL,
     sysdate DATE,
     Stock_Code varchar(6) NOT NULL,
