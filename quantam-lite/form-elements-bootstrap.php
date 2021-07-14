@@ -466,14 +466,14 @@ if(isset($_POST['txsub']))
                                     <span class="form-bar"></span>
                                     <label class="float-label">Contact Number #</label></div>
                                 <div class="form-group form-default">
-                                    <input type="text" name="address" class="form-control" placeholder="Blk 4" required>
+                                    <input type="text" name="tdcp" class="form-control" placeholder="Quezon City" required>
                                     <span class="form-bar"></span>
-                                    <label class="float-label">Delivery Address</label>
+                                    <label class="float-label">TDCP</label>
                                 </div>
                                 <div class="form-group form-default">
-                                    <input type="text" name="tdcp" class="form-control" placeholder="Sta. Mesa, Metro Manila" required>
+                                    <input type="text" name="address" class="form-control" placeholder="25 Bagumbayan St." required>
                                     <span class="form-bar"></span>
-                                    <label class="float-label">Town/District/City/Province</label> </div>
+                                    <label class="float-label">Delivery Address</label> </div>
                                 <div class="form-group form-default">
                                     <input type="text" name="pc" class="form-control" placeholder="1016" minlength="4" maxlength="4"  required >
                                     <span class="form-bar"></span>
