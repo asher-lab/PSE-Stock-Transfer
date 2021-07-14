@@ -72,3 +72,93 @@ insert into transaction_tb ( transactionID, Col_ID, sysdate, Stock_Code, Brokeri
 insert into transaction_tb ( transactionID, Col_ID, sysdate, Stock_Code, Brokerid, TransferType) values (11, 20190010, '20170618', 'GMA7','MANDARIN','Stock Transfer In');
 insert into transaction_tb ( transactionID, Col_ID, sysdate, Stock_Code, Brokerid, TransferType) values (12, 20190011, '20200618', 'ABS','MANDARIN', 'Stock Transfer Out');
 insert into transaction_tb ( transactionID, Col_ID, sysdate, Stock_Code, Brokerid, TransferType) values (13, 20190012, '20200518', 'GLO','WEALTH','Stock Transfer In');
+
+
+-- phpMyAdmin SQL Dump
+-- version 5.1.1
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Jul 14, 2021 at 05:06 PM
+-- Server version: 10.4.19-MariaDB
+-- PHP Version: 8.0.7
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `im`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `transaction_tb`
+--
+
+CREATE TABLE `transaction_tb` (
+  `transactionID` bigint(18) NOT NULL,
+  `COL_ID` int(11) NOT NULL,
+  `sysdate` date DEFAULT NULL,
+  `Stock_Code` varchar(6) NOT NULL,
+  `Brokerid` varchar(30) NOT NULL,
+  `Transfertype` varchar(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `transaction_tb`
+--
+
+INSERT INTO `transaction_tb` (`transactionID`, `COL_ID`, `sysdate`, `Stock_Code`, `Brokerid`, `Transfertype`) VALUES
+(1, 20190000, '2012-06-18', 'AR', 'ABACUS', 'Stock Transfer Out'),
+(2, 20190001, '2013-06-18', 'AR', 'ABACUS', 'Stock Transfer Out'),
+(3, 20190002, '2013-06-18', 'AB', 'BDO', 'Stock Transfer Out'),
+(4, 20190003, '2021-06-18', 'AB', 'FIRSTMETRO', 'Stock Transfer In'),
+(5, 20190004, '2020-06-18', 'JFC', 'ABACUS', 'Stock Transfer In'),
+(6, 20190005, '2019-06-18', 'PHA', 'FIRSTMETRO', 'Stock Transfer Out'),
+(7, 20190006, '2019-06-18', 'PHA', 'BDO', 'Stock Transfer In'),
+(8, 20190007, '2015-06-18', 'VUL', 'BARCELON', 'Stock Transfer Out'),
+(9, 20190008, '0000-00-00', 'AR', 'BARCELON', 'Stock Transfer In'),
+(10, 20190009, '2014-06-18', 'VUL', 'MANDARIN', 'Stock Transfer Out'),
+(11, 20190010, '2017-06-18', 'GMA7', 'MANDARIN', 'Stock Transfer In'),
+(12, 20190011, '2020-06-18', 'ABS', 'MANDARIN', 'Stock Transfer Out'),
+(13, 20190012, '2020-05-18', 'GLO', 'WEALTH', 'Stock Transfer In');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `transaction_tb`
+--
+ALTER TABLE `transaction_tb`
+  ADD PRIMARY KEY (`transactionID`),
+  ADD KEY `COL_ID` (`COL_ID`,`transactionID`),
+  ADD KEY `Brokerid` (`Brokerid`,`transactionID`),
+  ADD KEY `Stock_Code` (`Stock_Code`,`transactionID`),
+  ADD KEY `Transfertype` (`Transfertype`,`transactionID`);
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `transaction_tb`
+--
+ALTER TABLE `transaction_tb`
+  ADD CONSTRAINT `transaction_tb_ibfk_1` FOREIGN KEY (`COL_ID`,`transactionID`) REFERENCES `custinfo_tb` (`Col_ID`, `transactionID`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `transaction_tb_ibfk_2` FOREIGN KEY (`Brokerid`,`transactionID`) REFERENCES `brokerinfo_tb` (`Brokerid`, `transactionID`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `transaction_tb_ibfk_3` FOREIGN KEY (`Stock_Code`,`transactionID`) REFERENCES `stockinfo_tb` (`Stock_Code`, `transactionID`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `transaction_tb_ibfk_4` FOREIGN KEY (`Transfertype`,`transactionID`) REFERENCES `transactiontype_tb` (`Transfertype`, `transactionID`) ON DELETE CASCADE ON UPDATE CASCADE;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
