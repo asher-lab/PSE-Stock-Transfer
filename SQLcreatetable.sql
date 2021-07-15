@@ -1,4 +1,3 @@
-
 CREATE TABLE custinfo_tb(
 	transactionID bigint(18) NOT NULL,
     Col_ID int(8) NOT NULL,
@@ -28,7 +27,7 @@ CREATE TABLE stockinfo_tb
 	transactionID bigint(18) NOT NULL,
 	Stock_Code varchar(6) NOT NULL,
 	Stock_Name varchar(50) NOT NULL,
-	Stock_Amount int(9) NOT NULL, 
+	Stock_Amount bigint(18) NOT NULL, 
 	Avecost float(6) NOT NULL,
 	Cert_amount int(8) NOT NULL,
 	PRIMARY KEY (stock_code,transactionID)
