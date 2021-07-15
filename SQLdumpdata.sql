@@ -1,4 +1,4 @@
-insert into custinfo_tb (transactionID, Col_ID, email, contact, tdcp,addressp, pc) values (1, 20190000, 'jdoumerque0@auda.org.au', 0926702804, 'Manila', '55 Transport Drive', '1000');
+insert into custinfo_tb (transactionID, Col_ID, email, contact, tdcp,address, pc) values (1, 20190000, 'jdoumerque0@auda.org.au', 0926702804, 'Manila', '55 Transport Drive', '1000');
 insert into custinfo_tb (transactionID, Col_ID, email, contact, tdcp,address, pc) values (2, 20190001, 'jboughen1@ovh.net', 0909702814, 'Quezon City', '6125 Stang Circle', '1001');
 insert into custinfo_tb (transactionID, Col_ID, email, contact, tdcp,address, pc) values (3, 20190002, 'ishowers2@devhub.com', 0945728014, 'Subic Bay', '54918 Alpine Place', '1002');
 insert into custinfo_tb (transactionID, Col_ID, email, contact, tdcp,address, pc) values (4, 20190003, 'cbackhurst3@hostgator.com', 0991728014, 'Rizal', '90340 Sugar Drive', '1003');
