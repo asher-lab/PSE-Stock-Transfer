@@ -502,7 +502,7 @@ if(isset($_POST['txsub']))
                                                 <span class="form-bar"></span>
                                                 <label class="float-label">Counter Party Broker Name</label></div>
                                             <div class="form-group form-default form-static-label">
-                                                <input type="text" name="Broker_contact" class="form-control" placeholder="Enter Broker Contact Number" minlength="3" maxlength="18" required >
+                                                <input type="text" name="Broker_contact" class="form-control" placeholder="Enter Broker Contact Number" minlength="11" maxlength="11" required >
                                                 <span class="form-bar"></span>
                                                 <label class="float-label">Contact Number</label></div>
                                             <div class="form-group form-default form-static-label">
