@@ -1,16 +1,16 @@
-insert into custinfo_tb (transactionID, Col_ID, email, contact, address, tdcp, pc) values (1, 20190000, 'jdoumerque0@auda.org.au', 0926702804, 'Manila', '55 Transport Drive', '1000');
-insert into custinfo_tb (transactionID, Col_ID, email, contact, address, tdcp, pc) values (2, 20190001, 'jboughen1@ovh.net', 0909702814, 'Quezon City', '6125 Stang Circle', '1001');
-insert into custinfo_tb (transactionID, Col_ID, email, contact, address, tdcp, pc) values (3, 20190002, 'ishowers2@devhub.com', 0945728014, 'Subic Bay', '54918 Alpine Place', '1002');
-insert into custinfo_tb (transactionID, Col_ID, email, contact, address, tdcp, pc) values (4, 20190003, 'cbackhurst3@hostgator.com', 0991728014, 'Rizal', '90340 Sugar Drive', '1003');
-insert into custinfo_tb (transactionID, Col_ID, email, contact, address, tdcp, pc) values (5, 20190004, 'scrank4@techcrunch.com', 0995708014, 'Siquijor', '913 Russell Avenue', '1004');
-insert into custinfo_tb (transactionID, Col_ID, email, contact, address, tdcp, pc) values (6, 20190005, 'mklimczak5@issuu.com', 0917702014, 'Zambales', '8827 Jenifer Trail', '1005');
-insert into custinfo_tb (transactionID, Col_ID, email, contact, address, tdcp, pc) values (7, 20190006, 'jantoinet6@huffingtonpost.com', 0916728014, 'Bataan', '96301 Ryan Trail', '1006');
-insert into custinfo_tb (transactionID, Col_ID, email, contact, address, tdcp, pc) values (8, 20190007, 'epawlyn7@house.gov', 0916702033, 'Pampanga', '47 Eastwood Lane', '1007');
-insert into custinfo_tb (transactionID, Col_ID, email, contact, address, tdcp, pc) values (9, 20190008, 'ssyrie8@usa.gov', 0923402814, 'Clark', '96992 Maywood Junction', '1008');
-insert into custinfo_tb (transactionID, Col_ID, email, contact, address, tdcp, pc) values (10, 20190009, 'madamovsky9@bing.com', 0990228014, 'Manila', '4 Moland Crossing', '1009');
-insert into custinfo_tb (transactionID, Col_ID, email, contact, address, tdcp, pc) values (11, 20190010, 'jlindwalla@phpbb.com', 0910928014, 'Subic Bay', '85213 Roth Junction', '1010');
-insert into custinfo_tb (transactionID, Col_ID, email, contact, address, tdcp, pc) values (12, 20190011, 'smcgoldrickb@wikispaces.com', 0993028014, 'Subic Bay', '12 Namekagon Street', '1011');
-insert into custinfo_tb (transactionID, Col_ID, email, contact, address, tdcp, pc) values (13, 20190012, 'pricardinc@51.la', 0906102014, 'Subic Bay', '6369 Algoma Court', '1012');
+insert into custinfo_tb (transactionID, Col_ID, email, contact, tdcp,addressp, pc) values (1, 20190000, 'jdoumerque0@auda.org.au', 0926702804, 'Manila', '55 Transport Drive', '1000');
+insert into custinfo_tb (transactionID, Col_ID, email, contact, tdcp,address, pc) values (2, 20190001, 'jboughen1@ovh.net', 0909702814, 'Quezon City', '6125 Stang Circle', '1001');
+insert into custinfo_tb (transactionID, Col_ID, email, contact, tdcp,address, pc) values (3, 20190002, 'ishowers2@devhub.com', 0945728014, 'Subic Bay', '54918 Alpine Place', '1002');
+insert into custinfo_tb (transactionID, Col_ID, email, contact, tdcp,address, pc) values (4, 20190003, 'cbackhurst3@hostgator.com', 0991728014, 'Rizal', '90340 Sugar Drive', '1003');
+insert into custinfo_tb (transactionID, Col_ID, email, contact, tdcp,address, pc) values (5, 20190004, 'scrank4@techcrunch.com', 0995708014, 'Siquijor', '913 Russell Avenue', '1004');
+insert into custinfo_tb (transactionID, Col_ID, email, contact, tdcp,address, pc) values (6, 20190005, 'mklimczak5@issuu.com', 0917702014, 'Zambales', '8827 Jenifer Trail', '1005');
+insert into custinfo_tb (transactionID, Col_ID, email, contact, tdcp,address, pc) values (7, 20190006, 'jantoinet6@huffingtonpost.com', 0916728014, 'Bataan', '96301 Ryan Trail', '1006');
+insert into custinfo_tb (transactionID, Col_ID, email, contact, tdcp,address, pc) values (8, 20190007, 'epawlyn7@house.gov', 0916702033, 'Pampanga', '47 Eastwood Lane', '1007');
+insert into custinfo_tb (transactionID, Col_ID, email, contact, tdcp,address, pc) values (9, 20190008, 'ssyrie8@usa.gov', 0923402814, 'Clark', '96992 Maywood Junction', '1008');
+insert into custinfo_tb (transactionID, Col_ID, email, contact, tdcp,address, pc) values (10, 20190009, 'madamovsky9@bing.com', 0990228014, 'Manila', '4 Moland Crossing', '1009');
+insert into custinfo_tb (transactionID, Col_ID, email, contact, tdcp,address, pc) values (11, 20190010, 'jlindwalla@phpbb.com', 0910928014, 'Subic Bay', '85213 Roth Junction', '1010');
+insert into custinfo_tb (transactionID, Col_ID, email, contact, tdcp,address, pc) values (12, 20190011, 'smcgoldrickb@wikispaces.com', 0993028014, 'Subic Bay', '12 Namekagon Street', '1011');
+insert into custinfo_tb (transactionID, Col_ID, email, contact, tdcp,address, pc) values (13, 20190012, 'pricardinc@51.la', 0906102014, 'Subic Bay', '6369 Algoma Court', '1012');
 
 
 insert into brokerinfo_tb (transactionID, Brokerid, Broker_contact, Account_wBroker) values (1, 'ABACUS', 6329251605, 'Jonas Merque');
