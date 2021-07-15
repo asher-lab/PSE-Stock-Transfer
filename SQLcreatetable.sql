@@ -1,8 +1,9 @@
+
 CREATE TABLE custinfo_tb(
 	transactionID bigint(18) NOT NULL,
     Col_ID int(8) NOT NULL,
     email varchar(50) NOT NULL,
-	contact bigint NOT NULL,
+	contact bigint(11) NOT NULL,
 	address varchar(100) NOT NULL,
 	tdcp varchar(100) NOT NULL,
 	pc int(4) NOT NULL,
@@ -16,7 +17,7 @@ CREATE TABLE brokerinfo_tb
 (
  transactionID bigint(18) NOT NULL,
   Brokerid varchar(30) NOT NULL,
-  Broker_contact bigint NOT NULL,
+  Broker_contact bigint(11) NOT NULL,
   Account_wBroker varchar(100) NOT NULL,
   PRIMARY KEY (Brokerid,transactionID)
 )ENGINE=InnoDB DEFAULT CHARSET=latin1;
