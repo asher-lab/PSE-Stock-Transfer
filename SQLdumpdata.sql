@@ -72,3 +72,7 @@ insert into transaction_tb ( transactionID, Col_ID, sysdate, Stock_Code, Brokeri
 insert into transaction_tb ( transactionID, Col_ID, sysdate, Stock_Code, Brokerid, TransferType) values (11, 20190010, '20170618', 'GMA7','MANDARIN','Stock Transfer In');
 insert into transaction_tb ( transactionID, Col_ID, sysdate, Stock_Code, Brokerid, TransferType) values (12, 20190011, '20200618', 'ABS','MANDARIN', 'Stock Transfer Out');
 insert into transaction_tb ( transactionID, Col_ID, sysdate, Stock_Code, Brokerid, TransferType) values (13, 20190012, '20200518', 'GLO','WEALTH','Stock Transfer In');
+
+
+
+insert into transaction_tb ( transactionID, Col_ID, sysdate, Stock_Code, Brokerid, TransferType) values (100, 20190012, '20200518', 'GLO','WEALTH','Stock Transfer In');
